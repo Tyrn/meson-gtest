@@ -6,6 +6,6 @@ directories=("src" "tests")
 # loop over directories
 for dir in "${directories[@]}"; do
   # find all .cpp and .h files in the directory and its subdirectories
-  find "$dir" \( -name '*.cpp' -o -name '*.h' \) -exec clang-format -i {} \;
+  find "$dir" \( -name '*.cpp' -o -name '*.h' -o -name '*.hpp' \) -exec clang-format -i {} \;
 done
 
