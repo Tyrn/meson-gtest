@@ -6,7 +6,7 @@ import sys
 from pathlib import Path
 
 SRC_DIRS = ("src", "tests")
-EXTENSIONS = (".CC", ".CPP", ".H", ".HH", ".HPP")
+EXTENSIONS = (".C", ".CC", ".CPP", ".H", ".HH", ".HPP")
 
 for dir in SRC_DIRS:
     for root, _, files in os.walk(Path(dir).resolve()):
